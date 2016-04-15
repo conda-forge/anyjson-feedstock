@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/anyjson-feedstock.svg?s
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/anyjson-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/anyjson-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/anyjson-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/anyjson-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/anyjson/badges/version.svg)](https://anaconda.org/conda-forge/anyjson)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/anyjson/badges/downloads.svg)](https://anaconda.org/conda-forge/anyjson)
+
 
 Updating anyjson-feedstock
 ==========================
