@@ -5,7 +5,7 @@ Home: http://bitbucket.org/runeh/anyjson/
 
 Package license: BSD License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Loads whichever is the fastest JSON module installed and provides a uniform API
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/anyjson-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/anyjson-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/anyjson-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/anyjson-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/anyjson-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/anyjson-feedstock/branch/master)
