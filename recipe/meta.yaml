@@ -1,16 +1,19 @@
+{% set name  = "anyjson" %}
 {% set version = "0.3.3" %}
+{% set sha256 = "37812d863c9ad3e35c0734c42e0bf0320ce8c3bed82cd20ad54cb34d158157ba" %}
+{% set build = 1 %}
 
 package:
-    name: anyjson
+    name: {{ name|lower }}
     version: {{ version }}
 
 source:
-    fn: anyjson-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/a/anyjson/anyjson-{{ version }}.tar.gz
-    md5: 2ea28d6ec311aeeebaf993cb3008b27c
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
-    number: 0
+    number: {{ build }}
     script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -25,10 +28,14 @@ test:
         - anyjson
 
 about:
-    home: http://bitbucket.org/runeh/anyjson/
-    license: BSD License
+    home: https://bitbucket.org/runeh/anyjson/
+    license_file: LICENSE
+    license: BSD 2-Clause
     summary: Loads whichever is the fastest JSON module installed and provides a uniform API
+    dev_url: https://bitbucket.org/runeh/anyjson/
+    doc_url: https://bitbucket.org/runeh/anyjson/
 
 extra:
     recipe-maintainers:
         - kwilcox
+        - pmlandwehr
