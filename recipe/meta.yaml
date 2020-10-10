@@ -1,7 +1,7 @@
 {% set name = "anyjson" %}
 {% set version = "0.3.3" %}
 {% set sha256 = "37812d863c9ad3e35c0734c42e0bf0320ce8c3bed82cd20ad54cb34d158157ba" %}
-{% set build = 1002 %}
+{% set build = 1003 %}
 
 package:
     name: {{ name|lower }}
