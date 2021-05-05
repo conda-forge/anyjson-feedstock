@@ -14,12 +14,14 @@ source:
 
 build:
     number: {{ build }}
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+    script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
     build:
         - python
+    host:
         - setuptools
+        - pip
     run:
         - python
 
@@ -30,7 +32,7 @@ test:
 about:
     home: https://bitbucket.org/runeh/anyjson/
     license_file: LICENSE
-    license: BSD 2-Clause
+    license: BSD-2-Clause
     summary: Loads whichever is the fastest JSON module installed and provides a uniform API
     dev_url: https://bitbucket.org/runeh/anyjson/
     doc_url: https://bitbucket.org/runeh/anyjson/
