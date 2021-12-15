@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - anyjson
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://bitbucket.org/runeh/anyjson/
